@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <script src="/src/javascript/index.js"></script>
+    <script src="preload.js"></script>
+    <link rel="stylesheet" type="text/css" href="./src/index.css">
+    <title>Nira chat</title>
+  </head>
+  <body>  
+    <div id="preloader" class="preloader">
+      <p>Carregando...</p>
+      <div class="lds-dual-ring"></div>
+    </div>
+    <main>
+      <div class="title">Logue com sua conta</div>
+      <form>
+        <div class="container_input">
+          <label for="email">Email</label>
+          <input type="text" name="email">
+        </div>
+        <div class="container_input">
+          <label for="password">Email</label>
+          <input type="text" name="password">
+        </div>
+        <button type="submit">Logar</button>
+      </form>
+    </main>
+  </body>
+</html>
